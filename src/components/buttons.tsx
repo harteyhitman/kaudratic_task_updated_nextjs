@@ -4,12 +4,12 @@ interface IButtons{
   className: any;
   icon?: any;
   onClick?: () => void;
-  onMouseUp: any
+  
 }
 
-const Buttons = ({onClick, label, className, icon, onMouseUp  } : IButtons) => {
+const Buttons = ({onClick, label, className, icon,  } : IButtons) => {
   return (
-    <button onMouseUp={onMouseUp}  onClick={onClick} 
+    <button onClick={onClick} 
     className={className}>
             {icon}
             {label}
